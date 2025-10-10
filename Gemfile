@@ -1,17 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.1.1'
+gem 'rails', '5.0.0'
 gem 'sqlite3', '~> 1.3.9'
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0.5'
 gem 'uglifier', '~> 2.7.2'
-gem 'coffee-rails', '~> 4.0.1'
-gem 'jquery-rails', '~> 4.4.0'
-gem 'turbolinks', '~> 5.0.0'
-gem 'omniauth', '~> 2.0.0'
+gem 'coffee-rails', '~> 4.1.1'
+gem 'jquery-rails', '~> 4.0.1'
+gem 'turbolinks', '~> 2.2.3'
+gem 'omniauth', '~> 1.3.1'
 gem 'omniauth-twitter', '~> 1.1.0'
-gem 'kaminari', '~> 0.15.1'
+gem 'kaminari', '~> 0.16.0'
 gem 'kaminari-bootstrap', '~> 3.0.1'
-gem "ransack", "~> 4.0.0"
+gem "ransack", "~> 1.3.0"
 gem 'carrierwave', '~> 2.2.6'
 gem 'mini_magick', '~> 4.9.4'
 
@@ -29,7 +29,7 @@ group :development, :test do
   gem 'rspec-expectations', '~> 3.0.0.beta', github: 'rspec/rspec-expectations'
   gem 'rspec-mocks', '~> 3.0.0.beta', github: 'rspec/rspec-mocks'
   gem 'rspec-support', '~> 3.0.0.beta', github: 'rspec/rspec-support'
-  gem 'factory_girl_rails', '~> 4.4.1'
+  gem 'factory_girl_rails', '~> 4.5.0'
 end
 
 group :test do
@@ -40,5 +40,5 @@ group :test do
 end
 
 group :staging, :production do
-  gem 'unicorn'
+  gem 'unicorn', '>= 4.9.0'
 end
